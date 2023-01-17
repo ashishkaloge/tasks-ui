@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+       <fieldset>
+        <legend>Personal Details</legend>
+        <!--User Name & Password Here -->
+        <div>
+            <label>Username: 
+               <input type="text" id="userid" required>
+            </label>
+        </div>
+        <div>
+            <label>Password: 
+               <input type="password" id="userpwd" required>
+            </label>
+         </div> 
+         <div>
+            <label>Male: 
+                <input type="radio" name="gender" value="male">
+            </label> 
+            <label>Female: 
+               <input type="radio" name="gender" value="female">
+            </label>
+         </div>
+         <!--Select Birth Date -->
+         <div>
+            <label>date of birth:
+                <input type="date" name="birthdate">
+            </label>
+         </div>
+         <!--text area for adress-->
+         <div>
+            <label>address:
+                <div>
+                <textarea name="address" id="address" cols="20" rows="2"></textarea>
+                </div>
+            </label>
+         </div>
+         <!--checkbox to choose languages known-->
+         <div>
+            <ul>
+                <li><input type="checkbox" name="language" value="English">English</li>
+                <li><input type="checkbox" name="language" value="Spanish">Spanish</li>
+                <li><input type="checkbox" name="language" value="French">French</li>
+            </ul>
+         </div>
+         <div>
+            <button type="submit">submit</button>
+         </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
