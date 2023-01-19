@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E0E0E0;
+}
+:root{
+    --white: #FFFFFF;
+}
+section{
+    width: 540px;
+    height: 540px;
+    background-color: #1A2233;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 300px;
+    margin-left: 375px;
+
+}
+.user-name{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--white);
+}
+.user-info{
+    display: inline-block;
+}
+.forword-ico{
+    padding: 20px;
+    background-color: #26334D;
+    border-radius: 50%;
+    float: right;
+}
+
+.wallet-ico{
+    padding: 15px;
+    background-color: var(--white);
+    display: inline-block;
+    border-radius: 50%;
+}
+.wallet-balance{
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--white);
+    padding-left: 15px;
+}
+.account-info{
+    padding-top: 20px;
+}
+.wallet-info{
+    padding-bottom: 15px;
+}
+.account-details{
+    display: inline-block;
+    padding: 25px;
+}
+.account-num{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--white);
+}
+.account-txt{
+    font-weight: 700;
+    font-size: 14px;
+    color: #6B7A99;
+}
+.carousal{
+    padding-top: 40px;
+}
+.session-details{
+    height: 190px;
+    width: 270px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 200px;
+}
+.session-num{
+    font-weight: 700;
+    font-size: 24px;
+    color: #4D5E80;
+    padding: 20px;
+}
+.session-info{
+    display: inline-block;
+
+}
+.session-live{
+    font-weight: 900;
+    font-size: 12px;
+    color: #8833FF;
+}
+.session-live-info{
+    padding-top: 20px;
+    
+}
+.account-txt:hover{
+    background-color: #26334D;
+}
+.details{
+    display: inline-block;
+}
+.slide-next:hover{
+    background-color: #FFFFFF;
+    padding: 4px;
+}
