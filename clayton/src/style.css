@@ -17,18 +17,25 @@ body{
     --font-size-sm13: 13px;
     --font-size-sm14: 14px;
     --font-size-md18: 18px;
+    --font-size-xl24: 24px;
     --font-size-xxl30: 30px;
     --font-size-xxl36: 36px;
     --font-weight-md: 500;
     --font-weight-lg: 700;
+    --font-weight-xl: 900;
     --grey-blue: #4D5E80;
     --gerey-blue-50: #4D5E80;
     --grey-blue-60: #6B7A99;
     --grey-blue-70: #7D8FB3;
+    --grey-blue-80: #ADB8CC;
+    --grey-blue-95: #F7F8FA;
+    --purple: #8833FF;
     --white: #FFFFFF;
 }
 .d-flex{
     display: flex;
+}
+.align-item{
     align-items: center;
 }
 .ico-18-12{
@@ -66,6 +73,7 @@ body{
     font-weight: var(--font-weight-lg);
     font-size: var(--font-size-sm13);
     padding: 15px;
+    color: var(--grey-blue-60);
 }
 .ico-16-20{
     width: var(--w-16);
@@ -76,11 +84,71 @@ body{
     border-radius: 50%;
     background-color: var(--white);
     margin: 5px;
-    border-width: 0;
-    justify-content: center;
-    align-items: center;
+    border-width: 0;    
 }
 .nav-links{
     margin-right: auto;
+}
+.ico-circle{
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+.canvas-prop{
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-xl24);
+    color: var(--gerey-blue-50);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.canvas-amt{
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-xl24);
+    color: var(--gerey-blue-50);
+}
+.canvas-txt{
+    color: var(--grey-blue-80);
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-sm12);
+}
+.offcanvas{
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.aside-canvas-txt{
+    color: var(--grey-blue-60);
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-sm12);
+}
+.aside-canvas-live{
+    font-weight: var(--font-weight-xl);
+    font-size: var(--font-size-sm12);
+    color: var(--purple);
+    padding: 5px 10px;
+    background: rgba(136, 51, 255, 0.1);
+    border-radius: 5px;
+}
+.aside-canvas-subtxt{
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-sm12);
+    color: var(--grey-blue-60);
+    padding-left: 10px;
+}
+.aside-canvas{
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-blue-95);
+    border: 2px solid #EDEFF2;
+    border-radius: 10px;
+}
+.aside-canvas-section{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.card-header-txt{
+    font-weight: var(--font-weight-lg);
+    font-size: var(--font-size-xl24);
+    color: var(--white);
 }
 

@@ -11,20 +11,24 @@
 
 <body>
     <header>
-        <nav class="d-flex navbar">
+        <!-- navbar starts here-->
+        <nav class="d-flex navbar align-item">
             <button class="btn-btn-window d-flex">
                 <img class="ico-18-12" src="./assets/button.png" alt="button-icon">
             </button>
+            <!-- header-->
             <h1 class="header">Constructor</h1>
-                <ul class="nav-links d-flex">
-                    <li class="nav-items"><a class="nav-ref" href="">Dashboard</a></li>
-                    <li class="nav-items"><a class="nav-ref" href="">About Us</a></li>
-                    <li class="nav-items"><a class="nav-ref" href="">News</a></li>
-                    <li class="nav-items"><a class="nav-ref" href="">User Policy</a></li>
-                    <li class="nav-items"><a class="nav-ref" href="">Contacts</a></li>
-                    <li class="nav-items"><a class="nav-ref" href="">...</a></li>
-                </ul>
-            <div class="nav-user-details d-flex">
+            <!-- dashboard links-->
+            <ul class="nav-links d-flex">
+                <li class="nav-items"><a class="nav-ref" href="">Dashboard</a></li>
+                <li class="nav-items"><a class="nav-ref" href="">About Us</a></li>
+                <li class="nav-items"><a class="nav-ref" href="">News</a></li>
+                <li class="nav-items"><a class="nav-ref" href="">User Policy</a></li>
+                <li class="nav-items"><a class="nav-ref" href="">Contacts</a></li>
+                <li class="nav-items"><a class="nav-ref" href="">...</a></li>
+            </ul>
+            <!-- user information-->
+            <div class="nav-user-details d-flex align-item">
                 <div>
                     <img class="ico-20-20" src="./assets/user.png" alt="user-icon">
                 </div>
@@ -39,7 +43,90 @@
                 </button>
             </div>
         </nav>
+        <!-- navbar Ends here-->
     </header>
+    
+    <!-- account information starts here-->
+    <div class="canvas d-flex">
+        <section class="offcanvas d-flex">
+            <!-- bank account information-->
+            <div class="info-card-sm d-flex">
+                <div class="ico-circle">
+                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                </div>  
+                <div>
+                    <h3 class="canvas-amt">$ 12,566</h3>
+                    <h6 class="canvas-txt">Bank Account</h6>
+                </div>
+            </div>
+            <!-- investment account information-->
+            <div class="info-card-sm d-flex">
+                <div class="ico-circle">
+                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                </div>
+                <div>
+                    <h3 class="canvas-amt">$ 43,566</h3>
+                    <h6 class="canvas-txt">Investment Account</h6>
+                </div>
+            </div>
+            <!-- cashback recieved-->
+            <div class="info-card-sm d-flex">
+                <div class="ico-circle">
+                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                </div>
+                <div>
+                    <h3 class="canvas-amt">$ 567</h3>
+                    <h6 class="canvas-txt">Cashback</h6>
+                </div>
+            </div>
+            <div class="info-card-sm d-flex">
+                <div class="ico-circle">
+                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                </div>
+                <div>
+                    <h3 class="canvas-amt">$ 8545</h3>
+                    <h6 class="canvas-txt">Cashback</h6>
+                </div>
+            </div>
+        </section>
+        <aside class="aside-canvas">
+            <div class="aside-canvas-session d-flex">
+                <div>
+                    <h6 class="aside-canvas-txt">Total Stations</h6>
+                    <h3 class="canvas-prop">456</h3>
+                </div>
+                <div>
+                    <img src="./assets/Chart.png" alt="chart-img">
+                </div>
+            </div>
+            <hr>
+            <div class="aside-canvas-section">
+                <span class="aside-canvas-live">Live</span>
+                <span class="aside-canvas-subtxt">4 visitors</span>
+                <span class="aside-canvas-subtxt">See Live View</span>
+            </div>
+        </aside>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-header-txt">
+                Your Cards
+            </h2>
+            <button card-btn>
+                <img src="./assets/forword.png" alt="forword-btn">
+            </button>
+        </div>
+        <div class="d-flex align-item">
+            <div class="ico-circle">
+                <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+            </div>  
+            <div>
+                <h3 class="canvas-amt">$ 12,566</h3>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
