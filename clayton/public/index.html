@@ -8,11 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/style.css">
 </head>
-
 <body>
     <header>
         <!-- navbar starts here-->
-        <nav class="d-flex navbar align-item">
+        <nav class="navbar d-flex align-item">
             <button class="btn-btn-window d-flex">
                 <img class="ico-18-12" src="./assets/button.png" alt="button-icon">
             </button>
@@ -45,88 +44,227 @@
         </nav>
         <!-- navbar Ends here-->
     </header>
-    
     <!-- account information starts here-->
-    <div class="canvas d-flex">
-        <section class="offcanvas d-flex">
-            <!-- bank account information-->
-            <div class="info-card-sm d-flex">
-                <div class="ico-circle">
-                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
-                </div>  
-                <div>
-                    <h3 class="canvas-amt">$ 12,566</h3>
-                    <h6 class="canvas-txt">Bank Account</h6>
+    <div class="container d-flex">
+        <div class="canvas">
+            <section class="offcanvas d-flex">
+                <!-- bank account information-->
+                <div class="info-card-sm d-flex">
+                    <div class="ico-circle">
+                        <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                    </div>  
+                    <div class="m-l-25">
+                        <h3 class="canvas-amt">$ 12,566</h3>
+                        <h6 class="canvas-txt">Bank Account</h6>
+                    </div>
+                </div>
+                <!-- investment account information-->
+                <div class="info-card-sm d-flex">
+                    <div class="ico-circle">
+                        <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                    </div>
+                    <div class="m-l-25">
+                        <h3 class="canvas-amt">$ 43,566</h3>
+                        <h6 class="canvas-txt">Investment Account</h6>
+                    </div>
+                </div>
+                <!-- cashback recieved-->
+                <div class="info-card-sm d-flex">
+                    <div class="ico-circle">
+                        <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                    </div>
+                    <div class="m-l-25">
+                        <h3 class="canvas-amt">$ 567</h3>
+                        <h6 class="canvas-txt">Cashback</h6>
+                    </div>
+                </div>
+                <div class="info-card-sm d-flex">
+                    <div class="ico-circle">
+                        <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                    </div>
+                    <div class="m-l-25">
+                        <h3 class="canvas-amt">$ 8545</h3>
+                        <h6 class="canvas-txt">Cashback</h6>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="d-flex">
+                <section class="card">
+                    <div class="card-header d-flex">
+                        <h2 class="card-header-txt">
+                            Your Cards
+                        </h2>
+                        <button class="card-btn align-item">
+                            <img class="card-btn-prop" src="./assets/forword.png" alt="forword-btn">
+                        </button>
+                    </div>
+                    <div class="d-flex align-item">
+                        <div class="ico-circle">
+                            <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+                        </div>  
+                        <div>
+                            <h3 class="canvas-amt m-l-25">$ 12,566</h3>
+                        </div>
+                    </div>
+            
+                    <div class="d-flex">
+                        <div class="account-info">
+                            <div class="account-amt">$ 6,443</div>
+                            <div class="account-text padding-bottom50">Account Transactions</div>
+                        
+                            <div class="account-amt">$ 6,443</div>
+                            <div class="account-text padding-bottom50">Account Transactions</div>
+                        </div>
+                        <div class="account-info">
+                            <div class="account-amt">$ 6,443</div>
+                            <div class="account-text padding-bottom50">Account Transactions</div>
+                        
+                            <div class="account-amt">$ 6,443</div>
+                            <div class="account-text padding-bottom50">Account Transactions</div>
+                        </div>
+                    </div>
+                        <img src="./assets/Line.png" alt="curent-card">
+                        <img src="./assets/Line w.png" alt="2nd-line">
+                        <img src="./assets/Line w.png" alt="last-line">  
+                </section>
+                <aside class="transaction-card">
+                    <h2 class="trs-card-heading">
+                        Transactions
+                    </h2>
+                        <div class="trs-card-details d-flex">
+                            <div class="d-flex">
+                                <div class="trs-icon">
+                                    <img src="./assets/droid.png" alt="android-img">
+                                </div>
+                                <div>
+                                    <h3 class="trs-sub-heading">Google Play Buyers</h3>
+                                    <span class="trs-date">25 Ocr 2045</span>
+                                </div>
+                            </div>
+                            <h3 class="trs-status">-$21</h3>
+                        </div>
+                        
+        
+                        <div class="trs-card-details d-flex">
+                            <div class="d-flex">
+                                <div class="trs-icon">
+                                    <img src="./assets/trend.png" alt="trend-img">
+                                </div>
+                                <div>
+                                    <h3 class="trs-sub-heading">VPN Buy Services</h3>
+                                    <span class="trs-date">25 Ocr 2045</span>
+                                </div>
+                            </div>
+                            <h3 class="trs-status">-$124</h3>
+                        </div>
+        
+                        <div class="trs-card-details d-flex">
+                            <div class="d-flex">
+                                <div class="trs-icon">
+                                    <img src="./assets/true.png" alt="vpn-img">
+                                </div>
+                                <div>
+                                    <h3 class="trs-sub-heading">VPN Buy Services</h3>
+                                    <span class="trs-date">25 Ocr 2045</span>
+                                </div>
+                            </div>
+                            <h3 class="trs-status">-$43</h3>
+                        </div>
+                        <div class="trs-card-details d-flex">
+                            <div class="d-flex">
+                                <div class="trs-icon">
+                                    <img src="./assets/web.png" alt="web-img">
+                                </div>
+                                <div>
+                                    <h3 class="trs-sub-heading">VPN Buy Services</h3>
+                                    <span class="trs-date">25 Ocr 2045</span>
+                                </div>
+                            </div>
+                            <h3 class="trs-status">-$43</h3>
+                        </div>
+                        <div class="trs-card-details d-flex">
+                            <div class="d-flex">
+                                <div class="trs-icon">
+                                    <img src="./assets/play.png" alt="play-img">
+                                </div>
+                                <div>
+                                    <h3 class="trs-sub-heading">Buy Apple Stocks</h3>
+                                    <span class="trs-date">25 Ocr 2045</span>
+                                </div>
+                            </div>
+                            <h3 class="trs-status">-$2,455</h3>
+                        </div>
+                </aside>
+            </div>
+        
+           <div class="d-flex">
+            <div class="transactions">
+                <section class="card-trns d-flex">
+                    <h2 class="card-trns-text">Transactions</h2>
+                    <h2 class="card-trns-amt">$ 2554</h2>
+                </section>
+                <div class="card-services d-flex">
+                    <section class="services">
+                        <div class="services-img">
+                            <img src="./assets/droid.png" alt="android-img">
+                        </div>
+                        <h3 class="services-txt">Google Play</h3>
+                    </section>
+                    <section class="services">
+                        <div class="services-img">
+                            <img src="./assets/web.png" alt="web-img">
+                        </div>
+                        <h3 class="services-txt">Google Play</h3>
+                    </section>
+                    <section class="services">
+                        <div class="services-img">
+                            <img src="./assets/rental.png" alt="rental-img">
+                        </div>
+                        <h3 class="services-txt">Google Play</h3>
+                    </section>
                 </div>
             </div>
-            <!-- investment account information-->
-            <div class="info-card-sm d-flex">
-                <div class="ico-circle">
-                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
+            <aside>
+                <div class="card-cashback">
+                    <h3 class="card-cashback-txt">Cashback Flow</h3>
+                    <img src="./assets/flow.png" alt="flow-img">
                 </div>
-                <div>
-                    <h3 class="canvas-amt">$ 43,566</h3>
-                    <h6 class="canvas-txt">Investment Account</h6>
+                
+                <div class="card-media d-flex">
+                    <div class="card-apple">
+                        <img src="./assets/apple.png" alt="apple-img">
+                        <h4 class="card-apple-txt">Apple iPhone</h4>
+                        <span class="card-apple-num">$ 568</span>
+                    </div>  
+                    <div class="messenger">
+                        <img class="icon-messenger" src="./assets/messenger.png" alt="messenger-img">
+                        <h4 class="card-apple-num">35%</h4>
+                    </div>
                 </div>
-            </div>
-            <!-- cashback recieved-->
-            <div class="info-card-sm d-flex">
-                <div class="ico-circle">
-                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
-                </div>
-                <div>
-                    <h3 class="canvas-amt">$ 567</h3>
-                    <h6 class="canvas-txt">Cashback</h6>
-                </div>
-            </div>
-            <div class="info-card-sm d-flex">
-                <div class="ico-circle">
-                    <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
-                </div>
-                <div>
-                    <h3 class="canvas-amt">$ 8545</h3>
-                    <h6 class="canvas-txt">Cashback</h6>
-                </div>
-            </div>
-        </section>
+            </aside>
+           </div>
+        </div>
+
         <aside class="aside-canvas">
-            <div class="aside-canvas-session d-flex">
-                <div>
-                    <h6 class="aside-canvas-txt">Total Stations</h6>
-                    <h3 class="canvas-prop">456</h3>
+            <div class="aside-canvas-details">
+                <div class="aside-canvas-session d-flex">
+                    <div>
+                        <h6 class="aside-canvas-txt">Total Stations</h6>
+                        <h3 class="canvas-prop">456</h3>
+                    </div>
+                    <div>
+                        <img src="./assets/Chart.png" alt="chart-img">
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/Chart.png" alt="chart-img">
-                </div>
-            </div>
-            <hr>
-            <div class="aside-canvas-section">
-                <span class="aside-canvas-live">Live</span>
-                <span class="aside-canvas-subtxt">4 visitors</span>
-                <span class="aside-canvas-subtxt">See Live View</span>
+                <hr>
+                <div class="aside-canvas-section">
+                    <span class="aside-canvas-live">Live</span>
+                    <span class="aside-canvas-subtxt">4 visitors</span>
+                    <span class="aside-canvas-subtxt">See Live View</span>
+                </div> 
             </div>
         </aside>
     </div>
-
-    <div class="card">
-        <div class="card-header">
-            <h2 class="card-header-txt">
-                Your Cards
-            </h2>
-            <button card-btn>
-                <img src="./assets/forword.png" alt="forword-btn">
-            </button>
-        </div>
-        <div class="d-flex align-item">
-            <div class="ico-circle">
-                <img class="ico-16-20" src="./assets/wallet.png" alt="button-icon">
-            </div>  
-            <div>
-                <h3 class="canvas-amt">$ 12,566</h3>
-            </div>
-        </div>
-    </div>
-
 </body>
-
 </html>
