@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // creating date object of today date
+        let todayDate = new Date();
+        document.write(`Today's date is ${todayDate.getDate()} <br>`);
+
+        // creating date object of date 15 december 2022
+        let x= new Date('december 15, 2022');
+        document.write(x + "<br>");
+
+        // creating day and time 
+        // creating day
+        let y = new Date();
+        let str = y.toDateString();
+        let newstr = str.split(" ");
+        document.write(newstr[0]+" ");
+
+        // creating time
+        let hour = todayDate.getHours();
+        let min = todayDate.getMinutes();
+        let sec = todayDate.getSeconds();
+        if (hour > 12) {
+            hour = hour - 12;
+            document.write(`${hour}PM : ${min}MIN : ${sec}SEC :`);
+        }
+        else {
+            document.write(`${hour}AM : ${min}MIN : ${sec}SEC :`);
+        }
+
+        // square root of no
+        document.write(`<br> square root of 25 is ${Math.sqrt(25)} <br>`);
+
+        // maximum no
+        document.write(Math.max(10, 65, 50) + "<br>");
+
+        // random no generator
+        document.write(Math.random() + "<br>");
+
+        // checking the no is between 100 and 500
+        let num = 550;
+        if (num > 100 && num < 500) {
+            document.write(num + " is between 100 and 500 <br>");
+        }
+        else {
+            document.write(num + " is not between 100 and 500 <br>");
+        }
+
+
+        // match the orguments
+        function matchArgument(a, b) {
+            if (a === b) {
+                document.write("true");
+            }
+            else {
+                document.write("false");
+            }
+
+
+        }
+        matchArgument(1, 1);
+        matchArgument(0, "0");
+    </script>
+</body>
+
+</html>
