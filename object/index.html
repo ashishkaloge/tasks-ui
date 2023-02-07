@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   object to string
+      let a = {name: "Ashish", profile: "front end intern"};
+      let b = JSON.stringify(a);
+      console.log(a);
+
+      //string to json//
+      let y = JSON.parse(b);
+      console.log(y);
+
+      //program to check if two objects have same values//
+      let name = {name: "Ashish"};
+      let profile = {name: "Ashish"};
+      let strName = JSON.stringify(name);
+      let strProfile = JSON.stringify(profile);
+      let str = strName===strProfile;
+      console.log(str);
+    </script>
+</body>
+</html>
