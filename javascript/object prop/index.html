@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const student={
+            name: "suresh",
+            age: 25,
+            domain: "java"
+        }
+        // 1.Write a JavaScript function to retrieve all the values of an object's properties.
+        function retrieveProp(params) {
+            const a=[];
+            for (const key in params) {
+                if (params.hasOwnProperty(key)) {
+                    a.push(params[key]);
+                }
+            }
+            return a;
+        }
+        const retrieve= retrieveProp(student);
+        console.log(retrieve);
+        // 2.Write a JavaScript function to convert an object into a list of `[key, value]` pairs.
+        function keyValuePairs(value){
+            const b=[];
+            for(const key in value){
+                if (value.hasOwnProperty(key)){
+                    b.push([key, value[key]])
+                }
+            }
+            return b;
+        }
+        const prop= keyValuePairs(student);
+        console.log(prop);
+        // 3.Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys.
+        function keyBecomevalues(arg){
+            const c={};
+            for (const key in arg){
+                if(arg.hasOwnProperty(key)){
+                    c[arg[key]]= key;
+                }
+            }
+            return c;
+        }
+        const pairs= keyBecomevalues(student);
+        console.log(pairs);
+        //  4.Write a JavaScript program to find the most frequent item of an array
+
+        const fruits= ["apple",'apple',"strawberry","guava","banana"]
+        const fruitsthings= ["apple",'applejuisce',"strawberry","guavajuisce","banana","apple"]
+        function mostFrequentItem(item){
+            if (condition) {
+                
+            }
+        }
+        // 5.Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+        function removeDuplicates(sub){
+            return [...new Set(sub)];
+        }
+        const newItems= removeDuplicates(fruits);
+        console.log(newItems)
+        // 6.Write a JavaScript function to merge two arrays and removes all duplicates elements
+        function mergeArray(arg1, arg2){
+            const merged= [...arg1, ...arg2];
+            const finalArray= [...new Set(merged)];
+            return finalArray;
+        }
+        console.log(mergeArray(fruits, fruitsthings))
+        // 7.Write a JavaScript function to remove a specific element from an array.
+
+        // 8. Write a JavaScript function to get a random item from an array.[1,2,3,4,5,6,7,8,9,10]
+        let newArr=[1,2,3,4,5,6,7,8,9,10]
+        function randomNo(num){
+            const newNum= Math.floor(Math.random(num)*newArr.length)
+            return newNum;
+        }
+        const random= randomNo(newArr)
+        console.log(random) 
+        //9 Write a JavaScript function to filter false, null, 0 and blank values from an array.[58, '', 'abcd', true, null, false, 0]
+        const blankValues= [58, '', 'abcd', true, null, false, 0]
+        function filterFalseValues(blank) {
+           return blankValues.filter(Boolean);
+        }
+        const valuesfilter= blankValues.filter(Boolean);
+        console.log(valuesfilter);
+
+
+    </script>
+</body>
+
+</html>
