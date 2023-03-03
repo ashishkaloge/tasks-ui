@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- wrapper section: starts here-->
+    <section class="container-fluid d-flex d-column h-100 overflow-hidden">
+        <section>
+            <div class="validation-bar d-flex">
+                <button class="opt-dropdown">
+                    <img class="filter-btn" src="./assets/filter.png" alt="filter-btn">
+                    <select class="opt-select" name="" id="select-opt">
+                        <option class="dropdown-select select f-s-16 f-w-500" value="">Select</option>
+                        <option class="dropdown-open open f-s-14 f-w-500" value="">Open</option>
+                        <option class="dropdown-error error f-s-14 f-w-500" value="">Error</option>
+                        <option class="dropdown-inactive inactive f-s-14 f-w-500" value="">Inactive</option>
+                        <option class="dropdown-success success f-s-14 f-w-500" value="">Success</option>
+                    </select>
+                </button>
+                <button class="add-btn" type="button" id="form-btn" onclick="formClick()">
+                    <img src="./assets/add.png" alt="add-btn">
+                    <span>Add customer</span>
+                </button>
+            </div>
+            <section class="form-section">
+                <!-- form inputs: starts here-->
+                <form class="drop-down-form">
+                    <div class="input-box d-flex">
+                        <div>
+                            <h4 class="input-heading">name</h4>
+                            <label for="name"></label>
+                            <input type="text" id="username" placeholder="Enter Name" required>
+                        </div>
+                        <div>
+                            <h4 class="input-heading">description</h4>
+                            <label for="description"></label>
+                            <input type="text" id="description" placeholder="Enter Description" required>
+                        </div>
+                        <div>
+                            <h4 class="input-heading">status</h4>
+                            <label for="status"></label>
+                            <div class="select-group">
+                                <select name="select-gr" id="dropdown-select">
+                                    <option class="dropdown-select select f-s-14 f-w-500" value="">Select Status
+                                    </option>
+                                    <option class="dropdown-open open f-s-14 f-w-500" value="">Open</option>
+                                    <option class="dropdown-error error f-s-14 f-w-500" value="">Error</option>
+                                    <option class="dropdown-inactive inactive f-s-14 f-w-500" value="">Inactive</option>
+                                    <option class="dropdown-success success f-s-14 f-w-500" value="">Success</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box d-flex">
+                        <div>
+                            <h4 class="input-heading">rate</h4>
+                            <label for="name"></label>
+                            <input type="number" id="rate" placeholder="Enter Rate" required>
+                        </div>
+                        <div>
+                            <h4 class="input-heading">Balance</h4>
+                            <label for="name"></label>
+                            <input type="number" id="balance" placeholder="Enter Balnce" required>
+                        </div>
+                        <div>
+                            <h4 class="input-heading">deposit</h4>
+                            <label for="name"></label>
+                            <input type="number" id="deposit" placeholder="Enter Deposit" required>
+                        </div>
+                    </div>
+                </form>
+                <!-- form inputs: ends here-->
+                <!-- action buttons: starts from here-->
+                <div class="form-action d-flex">
+
+                    <button type="button" class="cancel-click f-w-500 f-s-14" id="cancel-btn">Cancel</button>
+
+
+                    <button type="button" class="save-click f-w-500 f-s-14" id="save-btn">Save</button>
+
+                </div>
+                <!-- action buttons: ends here-->
+            </section>
+        </section>
+        <!-- dynamic table details attached from here-->
+        <main class="table-data d-flex d-column overflow-horizontal">
+        </main>
+        <!-- dynamic table details attached from here-->
+    </section>
+    <!-- wrapper section: ends here-->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

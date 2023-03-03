@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "data": [
+    {
+      "user": "",
+      "description": "",
+      "status": "",
+      "rate": "",
+      "balance": "",
+      "deposit": null,
+      "id": 1
+    },
+    {
+      "user": "Ann Culhane",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Open",
+      "rate": "70.00",
+      "balance": "-270.00",
+      "deposit": null,
+      "id": 2
+    },
+    {
+      "user": {},
+      "description": {},
+      "status": null,
+      "rate": {},
+      "balance": {},
+      "deposit": null,
+      "id": 3
+    },
+    {
+      "user": "viren",
+      "description": "",
+      "status": null,
+      "rate": "",
+      "balance": "",
+      "deposit": null,
+      "id": 4
+    },
+    {
+      "user": "viren",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": null,
+      "rate": "12",
+      "balance": "18",
+      "deposit": null,
+      "id": 5
+    },
+    {
+      "user": "",
+      "description": "",
+      "status": null,
+      "rate": "",
+      "balance": "",
+      "deposit": null,
+      "id": 6
+    },
+    {
+      "user": "",
+      "description": "",
+      "status": null,
+      "rate": "",
+      "balance": "",
+      "deposit": null,
+      "id": 7
+    },
+    {
+      "user": "viren",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": null,
+      "rate": "44",
+      "balance": "4245",
+      "deposit": null,
+      "id": 8
+    },
+    {
+      "user": "nupur",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "",
+      "rate": "3563",
+      "balance": "354",
+      "deposit": "45244",
+      "id": 9
+    },
+    {
+      "user": "Ann Culhane",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "",
+      "rate": "8668",
+      "balance": "557",
+      "deposit": "575",
+      "id": 10
+    },
+    {
+      "user": "",
+      "description": "",
+      "status": "",
+      "rate": "",
+      "balance": "",
+      "deposit": "",
+      "id": 11
+    },
+    {
+      "user": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...fbgfsfg fcv xcvgfjhnrsbfgcxcv cvds",
+      "status": "",
+      "rate": "",
+      "balance": "",
+      "deposit": "",
+      "id": 12
+    },
+    {
+      "user": "viren",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "",
+      "rate": "5763",
+      "balance": "333",
+      "deposit": "353553",
+      "id": 13
+    },
+    {
+      "user": "sds",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "",
+      "rate": "2525",
+      "balance": "24245",
+      "deposit": "5424",
+      "id": 14
+    },
+    {
+      "user": "Annfgvbd",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...fbgfsfg fcv xcvgfjhnrsbfgcxcv cvds",
+      "status": "",
+      "rate": "6556",
+      "balance": "54454",
+      "deposit": "8454",
+      "id": 15
+    }
+  ]
+}
