@@ -1,0 +1,51 @@
+<table [style.border]="border">
+  <tr *ngFor="let item of thead">
+    <td>{{item.th1}}</td>
+    <td>{{item.th2}}</td>
+    <td>{{item.th3}}</td>
+  </tr>
+  <tr *ngFor="let item of arr">
+    <td>
+      {{item.RollNo}}
+    </td>
+    <td>
+      {{item.name}}
+    </td>
+    <td *ngIf="item.registration">
+      <button>{{delete}}</button>
+    </td>
+  </tr>
+</table>
+
+<div (change)="getDay($event)">
+  <input type="radio" name="day" id="" value="sunday"><label for="sunday">sunday</label>
+
+  <input type="radio" name="day" id="" value="monday"><label for="sunday">monday</label>
+
+  <input type="radio" name="day" id="" value="tuesday"><label for="sunday">tuesday</label>
+
+  <input type="radio" name="day" id="" value="wednesday"><label for="sunday">wednesday</label>
+
+  <input type="radio" name="day" id="" value="thursday"><label for="sunday">thursday</label>
+
+  <input type="radio" name="day" id="" value="friday"><label for="sunday">friday</label>
+
+  <input type="radio" name="day" id="" value="saturday"><label for="sunday">saturday</label>
+
+</div>
+<div [ngSwitch]="selectd">
+<p *ngSwitchCase="'sunday'">Today Is Sunday</p>
+<p *ngSwitchCase="'monday'">Today Is Monday</p>
+<p *ngSwitchCase="'tuesday'">Today Is tuesday</p>
+<p *ngSwitchCase="'wednesday'">Today Is wednesday</p>
+<p *ngSwitchCase="'thursday'">Today Is thursday</p>
+<p *ngSwitchCase="'friday'">Today Is friday</p>
+<p *ngSwitchCase="'saturday'">Today Is saturday</p>
+</div>
+
+I"m Changing my color, click below 
+<div >
+  <p [ngStyle]="{'background-color':'red','font-size.px': '30'}">Raj</p>
+  <button [ngClass]="myclass ? 'fontcolor' : 'fontcoloruuu' " (click)="myclass=!myclass">{{changecolor}}</button>
+</div>
+<router-outlet></router-outlet>
