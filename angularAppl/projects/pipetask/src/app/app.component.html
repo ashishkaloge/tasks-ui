@@ -1,0 +1,14 @@
+<input type="text" [(ngModel)]="search">{{search}}
+<table>
+  <tr *ngFor="let value of table | square: search">
+    <td>
+      {{value.name}}
+    </td>
+    <td>
+      {{value.rollno}}
+    </td>
+    <td>
+      {{value.mob}}
+    </td>
+  </tr>
+</table>
