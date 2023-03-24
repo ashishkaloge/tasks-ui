@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* helper classes: starts here */
+.display-flex {
+    display: flex;
+}
+
+.display-column {
+    flex-direction: column;
+}
+
+.display-none {
+    display: none;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-verticle {
+    overflow-y: auto;
+}
+
+.overflow-horizontal {
+    overflow-x: auto;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+/* helper classes: ends here */
+
+/* sidebar properties: start from here */
+.container {
+    background-color: #363740;
+}
+
+.logo-thumbnail {
+    border-radius: 50px;
+    padding: 12px 14px 12px 16px;
+    background-color: #3559fa;
+    color: #ffffff;
+}
+
+.logo {
+    padding: 10px;
+    margin: 20px;
+}
+
+.logo-heading {
+    padding: 13.5px;
+    color: #80828d;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    margin-top: 20px;
+
+}
+
+li:hover {
+    background-color: #3e4049;
+    border-left: 5px solid #dde3fe;
+}
+
+li {
+    list-style: none;
+    padding: 25px 0 25px 30px;
+    color: #9b9da8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.sidebar-navigation {
+    border-bottom: 2px solid #3e4049;
+}
+
+.sidebar {
+    background-color: #363740;
+    width: 280px;
+    transform: translateX(0);
+    transition: .5s ease-in-out;
+    flex: 0 0 280px;
+
+
+}
+
+#toggle:checked+.sidebar {
+    transform: translateX(-280px);
+    width: 0;
+    flex: 0 0 0;
+}
+
+/* sidebar properties: end from here */
+
+/* header properties: strats from here */
+.container-main {
+    background-color: #f7f8fc;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+
+.user-img {
+    padding: 2px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #e0e1eb;
+}
+
+.user-name {
+    color: #484a53;
+    padding: 10px 30px 10px 30px;
+    border-left: 2px solid #c5c7cd;
+
+    margin-left: 20px;
+}
+
+.fa-solid {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.bell-active {
+    position: relative;
+}
+
+.bell-active::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    height: 6px;
+    width: 6px;
+    left: 8px;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #3559fa;
+}
+
+
+/* header properties: end from here */
+
+/* table section design: starts here */
+.table-main {
+    border: 2px solid #e2e3ec;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.action-btn {
+    justify-content: space-between;
+    padding: 30px;
+}
+
+h2,
+h3 {
+    color: #272934;
+}
+
+.btn-btn-action {
+    color: #72768c;
+    padding-left: 40px;
+}
+
+th {
+    text-align: left;
+    padding: 20px 0 20px 30px;
+    color: #b9bbc8;
+    border-bottom: 2px solid #e7e7f0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: #f7f8ff;
+}
+
+td {
+    padding: 20px 0 20px 30px;
+    border-bottom: 2px solid #e7e7f0;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.user-msg {
+    padding-left: 30px;
+}
+
+.user-bio {
+    font-weight: 300;
+}
+
+.ticket-status {
+    color: #dadcdf;
+    padding: 5px 0 0 0;
+}
+
+.status-high {
+    padding: 4px 12px 4px 12px;
+    background-color: #ef2931;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.status-low {
+    padding: 4px 12px 4px 12px;
+    background-color: #fdc231;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.status-normal {
+    padding: 4px 12px 4px 12px;
+    background-color: #32cb9a;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+/* table section design: ends here */
+
+/* media quesries applied from here */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .fa-ellipsis-vertical {
+        display: none;
+    }
+
+}
+
+/* media quesries ends here */

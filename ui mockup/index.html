@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahboard Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <!--cdn link of font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!--google fonts imports here roboto 300, 400, 500-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--wrapper section design: starts from here-->
+    <section class="container display-flex overflow-hidden height-100 overflow-hidden">
+        <input type="checkbox" class="display-none" id="toggle">
+        <aside class="sidebar display-flex display-column overflow-hidden">
+            <!--design of logo: starts-->
+            <div class="logo display-flex align-items-center">
+                <div class="logo-thumbnail">
+                    <b>D</b>
+                </div>
+                <h1 class="logo-heading">Dashboard Kit</h1>
+            </div>
+            <!--design of logo: ends-->
+            <!--navigation links: starts-->
+            <nav class="navbar display-flex display-column overflow-hidden">
+                <ul class="sidebar-navigation display-flex display-column overflow-verticle">
+                    <li><i class="fa-solid fa-pie-chart"></i>Overview</li>
+                    <li><i class="fa-solid fa-ticket"></i>Tickets</li>
+                    <li><i class="fa-sharp fa-solid fa-lightbulb"></i>Ideas</li>
+                    <li><i class="fa-solid fa-users"></i>Contacts</li>
+                    <li><i class="fa-solid fa-user-tie"></i>Agents</li>
+                    <li><i class="fa-solid fa-file-zipper"></i>Articles</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-gear"></i>Setting</li>
+                    <li><i class="fa-solid fa-medal"></i>Subscription</li>
+                </ul>
+            </nav>
+            <!--navigation links: ends-->
+        </aside>
+        <section class="container-main display-flex display-column flex-grow-1 height-100 overflow-hidden">
+            <!--header design: starts-->
+            <header class="header display-flex align-items-center">
+                <label class="sidebar-toggle display-flex align-items-center" for="toggle"><i
+                        class="fa-solid fa-bars"></i>
+                    <h2>Tickets</h2>
+                </label>
+                <div class="user display-flex align-items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div><i class="bell-active fa-solid fa-bell "></i>
+                    </div>
+                    <div class="user-details display-flex align-items-center">
+                        <span class="user-name"><b>Jones Ferdinand</b></span>
+                        <img class="user-img" src="./assets/user.avif" alt="user-img">
+                    </div>
+                </div>
+            </header>
+            <!--header design: ends-->
+            <main class="table-main display-flex display-column height-100 overflow-hidden">
+                <div class="action-btn display-flex align-items-center">
+                    <h3>All Tickets</h3>
+                    <div class="">
+                        <span class="btn-btn-action"><i class="fa-solid fa-arrow-up-wide-short"></i>Sort</span>
+                        <span class="btn-btn-action"><i class="fa-solid fa-filter"></i>Filter</span>
+                    </div>
+                </div>
+                <!--table design: starts-->
+                <section class="table-data display-flex display-column height-100 overflow-verticle">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticket details</th>
+                                <th>Customer Name</th>
+                                <th>Date</th>
+                                <th>Priority</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/robert.avif" alt="">
+                                        <span class="user-msg">
+                                            Contact Email Not Linked
+                                            <div class="ticket-status">
+                                                Updated 1 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Tom Cruise
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            6.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-high">High</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/andrey.png" alt="">
+                                        <span class="user-msg">
+                                            Adding Images to Feature Post
+                                            <div class="ticket-status">
+                                                Updated 1 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        jennifer Lawrence
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            7.30am
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-low">Low</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/scarlet.avif" alt="">
+                                        <span class="user-msg">
+                                            When will I Be Charged This Month?
+                                            <div class="ticket-status">
+                                                Updated 2 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Scarlett Johnson
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 25, 2019
+                                        <div class="ticket-status">
+                                            9.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-normal">Normal</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/evans.avif" alt="">
+                                        <span class="user-msg">
+                                            Payment Not Going Through
+                                            <div class="ticket-status">
+                                                Updated 2 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Tom Cruise
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            10.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-low">Low</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/evans.avif" alt="">
+                                        <span class="user-msg">
+                                            Unable to Add Replies
+                                            <div class="ticket-status">
+                                                Updated 4 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Chris Evans
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            6.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-normal">Normal</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/sir.avif" alt="">
+                                        <span class="user-msg">
+                                            Downtime Since Last Week
+                                            <div class="ticket-status">
+                                                Updated 4 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Sam Smith
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            6.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-high">High</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/extra2.avif" alt="">
+                                        <span class="user-msg">
+                                            How Do I Change My Password
+                                            <div class="ticket-status">
+                                                Updated 1 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Tom Haland
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            6.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-low">Low</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-bio display-flex align-items-center">
+                                        <img class="user-img" src="./assets/robert.avif" alt="">
+                                        <span class="user-msg">
+                                            Refferal Status
+                                            <div class="ticket-status">
+                                                Updated 1 day ago
+                                            </div>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>
+                                        Chris Hemesworth
+                                        <div class="ticket-status">
+                                            On 24.05.2019
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span>
+                                        May 26, 2019
+                                        <div class="ticket-status">
+                                            6.30pm
+                                        </div>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-high">High</span>
+                                </td>
+                                <td>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!--table design: ends-->
+            </main>
+        </section>
+    </section>
+    <!--wrapper section design: ends here-->
+</body>
+
+</html>
