@@ -1,0 +1,76 @@
+// variables
+$overflow-hidden: hidden;
+$overflow: auto;
+$light-grey: #15181b;
+$light-green: #1cb86c;
+$black: #111111;
+$white: #edecd2;
+$h-100: 100%;
+$w-100: 100%;
+$flex-grow:1;
+
+
+
+
+$flex: flex;
+$block: block;
+$inline-block: inline-block;
+
+$display:(
+    'flex': $flex,
+    'block': $block,
+    'inline-block': $inline-block
+    );
+    @each $key, $value in $display{
+        .d-#{$key}{
+            display:($value);
+        }
+    }
+
+    $justify-content-between: space-between;
+    $justify-content-around: space-around;
+    $justify-content-evenly: space-evenly;
+    $justify-content-start: flex-start;
+    $justify-content-end: flex-end;
+    $jusify-content-center: center;
+
+    $direction:(
+        'space-between': $justify-content-between,
+        'space-around': $justify-content-around,
+        'space-evenly': $justify-content-evenly,
+        'content-start': $justify-content-start,
+        'content-end': $justify-content-end,
+        'content-center': $jusify-content-center,
+    );
+    @each $key,$value in $direction{
+        .justify-#{$key}{
+            justify-content: ($value);
+        }
+    }
+$flex-row: row;
+$flex-column: column;
+
+$f-direction:(
+    'flex-column':$flex-column,
+    'flex-row': $flex-row,
+);
+@each $key,$value in $f-direction{
+    .d-#{$key}{
+        flex-direction: ($value);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: $h-100;
+    width: $w-100;
+}
+
+.container{
+    overflow: $overflow-hidden;
+    background-color: black;
+    height: $h-100;
+}
