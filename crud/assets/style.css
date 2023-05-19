@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* helper classes: starts here */
+.d-flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.h-100{
+    height: 100%;
+}
+.overflow-auto{
+    overflow: auto;
+}
+.overflow-hide{
+    overflow: hidden;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* helper classes: ends here */
+/* variables declaration: starts here */
+:root{
+    --white: #ffffff;
+    --sky-blue: #87CEEB;
+    --pastel-yellow: #FDFD96;
+    --mint: #3eb489;
+    --orange: #ff5349;
+}
+/* variables declaration: ends shere */
+/* navbar: starts here */
+.navbar{
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 8px 16px;
+    margin-bottom: 4px;
+   
+}
+/* navbar: ends here */
+/* nav menu: starts here */
+.nav-menu{
+    padding: 16px;
+}
+.btn-add-emp{
+    background-color: skyblue;
+    padding: 8px;
+    border-style: none;
+    border-radius: 10px;
+}
+.btn-clear-filter{
+    background-color: var(--mint);
+    padding: 8px;
+    margin: 4px;
+    border-style: none;
+    border-radius: 10px;
+}
+.btn-search{
+    background-color: var(--orange);
+    padding: 8px;
+    margin: 4px;
+    border-style: none;
+    border-radius: 10px;   
+}
+.search-input{
+    border-style: none;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--sky-blue);
+}
+/* nav menu: ends here*/
+/* table design: starts here */
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+}
+/* table design: ends here */
