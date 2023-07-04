@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+/* helper classes: starts here */
+
+/* helper classes: ends here */
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.align-items-center{
+    align-items: center;
+}
+.h-100{
+    height: 100%;
+}
+
+/* variables: starts here */
+:root{
+    
+}
+
+/* variables: ends here */
+.sidebar{
+    width: 100px;
+    height: 100vh;
+    background-color: #e3f2fd;
+}
+.btn-primary{
+    margin: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+iframe {
+    height: 100vh;
+  }  
+
+
+/* styling */
