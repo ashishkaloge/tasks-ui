@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <section class="container h-100 d-flex flex-column justify-center align-center">
+        <h1>Bug Report Form</h1>
+        <form action="" class="bug-reportform d-flex flex-column">
+            <div class="name-feild">
+                <label for="inputName" class="form-label d-flex">
+                    <h4>Name:</h4><span class="required">*</span>
+                </label>
+                <input type="text" class="name-control" id="inputName">
+                <div class="validation-msg" id="nameValidationMessage">Enter your first Name</div>
+            </div>
+            <div class="email-feild">
+                <label for="inputEmail1" class="form-label d-flex">
+                    <h4>Email:</h4><span class="required">*</span>
+                </label>
+                <input type="email" class="email-control" id="inputEmail1">
+                <div class="validation-msg" id="emailValidationMessage">Enter your emailid Name</div>
+            </div>
+            <div class="radio-feild d-flex justify-between">
+                <div class="bug-type">
+                    <div class="d-flex">
+                        <h4>Type:</h4><span class="required">*</span>
+                    </div>
+                    <div class="type-check">
+                        <input class="type-check-input" type="radio" name="radioDefaultType" id="radioBug">
+                        <label class="type-check-label" for="radioBug">
+                            Bug
+                        </label>
+                    </div>
+                    <div class="type-check">
+                        <input class="type-check-input" type="radio" name="radioDefaultType" id="radioSuggestion">
+                        <label class="type-check-label" for="radioSuggestion">
+                            Future Suggestion
+                        </label>
+                    </div>
+                    <div class="type-check">
+                        <input class="type-check-input" type="radio" name="radioDefaultType" id="radioComment">
+                        <label class="type-check-label" for="radioComment">
+                            Comment
+                        </label>
+                    </div>
+                    <div class="validation-msg" id="radioValidationMsg"></div>
+                </div>
+                <div class="priority-type">
+                    <div class="d-flex">
+                        <h4>Priority:</h4><span class="required">*</span>
+                    </div>
+                    <div class="priority-check">
+                        <input class="priority-check-input" type="radio" name="radioDefaultPriority" id="radioHigh">
+                        <label class="priority-check-label" for="radioHigh">
+                            High
+                        </label>
+                    </div>
+                    <div class="priority-check">
+                        <input class="priority-check-input" type="radio" name="radioDefaultPriority" id="radioMedium">
+                        <label class="priority-check-label" for="radioMedium">
+                            Medium
+                        </label>
+                    </div>
+                    <div class="priority-check">
+                        <input class="priority-check-input" type="radio" name="radioDefaultPriority" id="radioLow">
+                        <label class="priority-check-label" for="radioLow">
+                            Low
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-feild d-flex justify-between">
+                <select class="option-select">
+                    <option selected>Open this select menu</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Firefox">Firefox</option>
+                    <option value="Brave">Brave</option>
+                    <option value="Safari">Safari</option>
+                </select>
+                <select class="option-select">
+                    <option selected>Open this select menu</option>
+                    <option value="Android">Android</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Mac/Ios">Mac/Ios</option>
+                </select>
+            </div>
+            <div class="upload-images">
+                <div class="input-images">
+                    <label for="inputGroupImage">
+                        <h4>Screenshots:</h4>
+                    </label>
+                    <input type="file" class="image-upload" id="inputGroupImage">
+                </div>
+            </div>
+            <div class="checkbox-feild">
+                <div class="d-flex">
+                    <h4>Reproductibility</h4><span class="required">*</span>
+                </div>
+                <div class="option-select d-flex justify-between">
+                    <div class="option-checkbox">
+                        <input class="checkbox-input" type="checkbox" value="" id="checkAlwaysOccures">
+                        <label class="checkbox-label" for="checkAlwaysOccures">
+                            Always Occure
+                        </label>
+                    </div>
+                    <div class="option-checkbox">
+                        <input class="=checkbox-input" type="checkbox" value="" id="checkIntermittentlyOccure" checked>
+                        <label class="=checkbox-label" for="checkIntermittentlyOccure">
+                            intermittently Occures
+                        </label>
+                    </div>
+                </div>
+                <div class="validation-msg" id="reproducibilityValidationMessage"></div>
+            </div>
+            <div class="upload-file">
+                <div class="input-file">
+                    <label for="inputGroupFile">
+                        <h4>Upload Your Code:</h4>
+                    </label>
+                    <input type="file" class="file-upload" id="inputGroupFile">
+                </div>
+            </div>
+            <div class="text-details">
+                <label for="inputDetails" class="input-details d-flex">
+                    <h4>Details:</h4><span class="required">*</span>
+                </label>
+                <input type="text" class="detail-control" id="inputDetails" required>
+                <div class="validation-msg" id="detailsValidationMessage">Briefly explain what is the problem</div>
+            </div>
+            <button class="submitBtn">submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
