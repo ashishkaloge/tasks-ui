@@ -42,7 +42,8 @@ body {
 }
 
 /* variables: ends here */
-/* styling */
+
+/* styling: starts here */
 .sidebar {
     width: 100px;
     height: 100vh;
@@ -68,12 +69,14 @@ iframe {
     width: 400px;
     transition: ease-in-out;
 }
-.container-iframe{
+
+.container-iframe {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.close-btn{
+
+.close-btn {
     margin: 8px;
     border: 1px solid var(--border-white);
     padding: 10px 20px;
@@ -81,3 +84,5 @@ iframe {
     background-color: var(--close-btn);
     color: var(--border-white);
 }
+
+/* styling: ends here */

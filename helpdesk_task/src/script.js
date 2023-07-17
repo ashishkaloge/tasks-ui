@@ -1,9 +1,9 @@
 const main = document.querySelector(".main-window");
 const helpBtn = document.getElementById("helpButton");
-let iframeVisible = false; 
+let iframeVisible = false;
 let iframeContainer = null;
 
-helpBtn.addEventListener('click', function() {
+helpBtn.addEventListener('click', function () {
     if (iframeVisible) {
         hideIframe();
     } else {
@@ -36,19 +36,17 @@ function createIframe() {
     const closeButton = document.createElement('button');
     closeButton.innerText = "Close";
     closeButton.classList.add("close-btn")
-    
+
     closeButton.addEventListener('click', hideIframe);
 
     const contentContainer = document.createElement('div');
     contentContainer.appendChild(closeButton);
     contentContainer.appendChild(iframe);
-    contentContainer.classList.add("container-iframe"); 
-
+    contentContainer.classList.add("container-iframe");
 
     iframeContainer.appendChild(contentContainer);
     main.appendChild(iframeContainer);
 }
-
 
 
 
